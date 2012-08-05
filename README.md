@@ -5,6 +5,13 @@
 Easily create Heroku addons in Flask.
 
 
+## Meta
+
+* author: Randall Degges
+* email:  rdegges@gmail.com
+* status: maintained, in development
+
+
 ## Audience
 
 So, you use [Heroku](http://www.heroku.com/) to host your Flask apps. You like
