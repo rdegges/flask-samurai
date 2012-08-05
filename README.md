@@ -18,8 +18,8 @@ You: "I know! I'll make my own addon! I'll even get rich in the process!"
 So you google "How can I create a Heroku addon?" and find the official
 [docs](https://addons.heroku.com/provider), but you're intimidated.
 
-> You: "There's too much stuff to do. I give up. (grumble)"
-> You: "I hate *the cloud* :("
+- You: "There's too much stuff to do. I give up. (grumble)"
+- You: "I hate *the cloud* :("
 
 **Don't feel bad! Stop whining!**
 
