@@ -12,8 +12,8 @@ the [addons](http://addons.heroku.com/), and you feel good, but your favorite
 (API / service / tool / whatever) doesn't yet have an addon, and that makes you
 upset.
 
-You: "I thought the cloud was supposed to have *everything*! (grumble)"
-You: "I know! I'll make my own addon! I'll even get rich in the process!"
+- You: "I thought the cloud was supposed to have *everything*! (grumble)"
+- You: "I know! I'll make my own addon! I'll even get rich in the process!"
 
 So you google "How can I create a Heroku addon?" and find the official
 [docs](https://addons.heroku.com/provider), but you're intimidated.
