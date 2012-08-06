@@ -70,3 +70,31 @@ this](https://addons.heroku.com/provider/resources/technical/build/getting-start
 
 If you don't know how to configure your Flask app, you should probably [read
 this](http://flask.pocoo.org/docs/config/).
+
+
+## Usage
+
+Right now, there's only a single decorator to help you do stuff: `heroku`. This
+decorator basically lets you wrap a Flask view, and ensures that all incoming
+HTTP requests are coming from Heroku directly.
+
+To use it, do the following:
+
+``` python
+from flask import Flask
+from samurai.decorators import Heroku
+
+app = Flask(__name__)
+app.config.from_pyfile('settings.py')
+
+# ...
+
+@app.route('/heroku/blah')
+@heroku
+def blah():
+    """This view will return a 401 if the request is NOT originated by Heroku."""
+    return 'hi'
+```
+
+Make sure that the `@heroku` decorator goes beneath the `@app` decorator, as
+order matters.
