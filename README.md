@@ -53,3 +53,20 @@ Among other things, `flask-samurai` will:
 From the command line, run `pip install -U flask-samurai`. If you don't have
 `pip` installed, and you're on Ubuntu (or Debian), try running `sudo apt-get -y
 install python-pip` first.
+
+
+Next, you need to add two settings to your Flask configuration:
+
+``` python
+# flask-samurai settings:
+SAMURAI_USERNAME = 'myaddonname'
+SAMURAI_PASSWORD = 'somelongpassword'
+```
+
+Those two settings should be identical to what you've defined in your
+`addon-manifest.json` file that Heroku requires you to generate. If you have no
+idea what the hell I'm talking about, [read
+this](https://addons.heroku.com/provider/resources/technical/build/getting-started)..
+
+If you don't know how to configure your Flask app, you should probably [read
+this](http://flask.pocoo.org/docs/config/).
