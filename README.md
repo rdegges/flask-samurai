@@ -101,3 +101,10 @@ def blah():
 
 Make sure that the `@heroku` decorator goes beneath the `@app` decorator, as
 order matters.
+
+
+## Changelog
+
+v0.1: 8-5-2012
+
+    - Initial release!
