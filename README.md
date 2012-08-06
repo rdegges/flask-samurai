@@ -46,3 +46,10 @@ Among other things, `flask-samurai` will:
 - Run local tests against your Heroku API calls to make sure you didn't fuck
   anything up.
 - Make adding / removing / changing Heroku addon users insanely easy.
+
+
+## Installation
+
+From the command line, run `pip install -U flask-samurai`. If you don't have
+`pip` installed, and you're on Ubuntu (or Debian), try running `sudo apt-get -y
+install python-pip` first.
