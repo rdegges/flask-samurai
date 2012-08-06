@@ -2,10 +2,9 @@
 
 
 from functools import wraps
-from os import environ
 
 from basicauth import DecodeError, decode
-from flask import abort, request
+from flask import abort, current_app, request
 
 
 def heroku(f):
@@ -17,16 +16,13 @@ def heroku(f):
 
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        authorization = request.headers.get('AUTHORIZATION')
-        if not authorization:
-            abort(401)
-
         try:
             username, password = decode(request.headers['AUTHORIZATION'])
-        except DecodeError:
+        except (DecodeError, KeyError):
             abort(401)
 
-        if username != environ.get('SAMURAI_USERNAME') or password != environ.get('SAMURAI_PASSWORD'):
+        if (username != current_app.config.get('SAMURAI_USERNAME') or
+                password != current_app.config.get('SAMURAI_PASSWORD')):
             abort(401)
 
         return f(*args, **kwargs)
