@@ -5,6 +5,9 @@
 Easily create Heroku addons in Flask.
 
 
+![samurai](https://github.com/rdegges/flask-samurai/raw/master/assets/samurai.jpg)
+
+
 ## Meta
 
 * author: Randall Degges
