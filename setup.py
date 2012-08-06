@@ -15,7 +15,7 @@ setup(
     include_package_data = True,
 
     # Package dependencies:
-    install_requires = [],
+    install_requires = ['Flask>=0.7', 'basicauth==0.2'],
 
     # Metadata for PyPI:
     author = 'Randall Degges',
